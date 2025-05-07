@@ -4,10 +4,6 @@ import java.util.*;
 
 public class Main 
 {
-	public static SimpleDateFormat ft = new SimpleDateFormat("MM-dd-yyyy");
-	public static int idCount = 0;
-	
-	
 	public static void main(String[] args) 
 	{
 		/*
@@ -18,6 +14,16 @@ public class Main
 		 * Use positional command line args to take in user input
 		 * Make sure to handle exceptions and edge cases
 		 */
+		
+		/*
+		 * TODO:
+		 * - Fix duplicate ID thing
+		 * - Extensively test things, handle edge cases
+		 * - Add comments
+		 * - Make everything look professional for GitHub
+		 */
+		int idCount = 0;
+		SimpleDateFormat ft = new SimpleDateFormat("MM-dd-yyyy");
 		ArrayList<Task> allTasks = new ArrayList<Task>();
 		File f = new File("task_list.JSON");
 		try 
