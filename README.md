@@ -20,17 +20,20 @@ This is a simple Command Line Interface Application for keeping track of tasks. 
 ```
 # Adding tasks
 java -jar taskcli.jar add "go to the store"
-#Output: Task added successfully (ID: 1)
+# Output: Task added successfully (ID: 1)
+
 java -jar taskcli.jar add "get a car wash"
-#Output: Task added successfully (ID: 2)
+# Output: Task added successfully (ID: 2)
+
 java -jar taskcli.jar add "go to the gym"
-#Output: Task added successfully (ID: 3)
+# Output: Task added successfully (ID: 3)
 
 # Marking tasks as done or in-progress
 java -jar taskcli.jar mark-done 2
-# Task marked as done
+# Output: Task marked as done
+
 java -jar taskcli.jar mark-in-progress 1
-# Task marked as in-progress
+# Output: Task marked as in-progress
 
 # Listing tasks
 java -jar taskcli.jar list
