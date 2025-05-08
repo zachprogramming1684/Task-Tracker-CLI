@@ -1,5 +1,5 @@
 # Task-Tracker-CLI
-This is a simple Command Line Interface Application for keeping track of tasks. You can add, update, delete, change markings, and list all tasks directly from the terminal.
+This is a simple Command Line Interface application for keeping track of tasks. You can add, update, delete, change markings, and list all tasks directly from the terminal.
 
 ## Commands
 * add: Adds a task with a description
