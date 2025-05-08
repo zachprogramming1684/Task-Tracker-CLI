@@ -2,7 +2,7 @@ import java.io.*;
 import java.text.*;
 import java.util.*;
 
-public class taskcli 
+public class Main 
 {
 	public static void main(String[] args) 
 	{
@@ -222,6 +222,10 @@ public class taskcli
 		catch (FileNotFoundException e) 
 		{
 			System.out.println("An error occured during file reading or creation");
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Please provide a command");
 		}
 		
 	}
