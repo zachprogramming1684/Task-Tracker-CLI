@@ -12,6 +12,9 @@ This is a simple Command Line Interface Application for keeping track of tasks. 
 ## Running the Program
 1. Download `taskcli.jar` to your machine.
 2. In your terminal, navigate to where you downloaded the jar file.
-   ex. `cd desktop`
+   ex. `cd <your file path>`
 3. Run the application
    `java -jar taskcli.jar <your command(s)>`
+
+## Usage
+```
