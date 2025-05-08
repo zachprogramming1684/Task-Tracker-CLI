@@ -2,26 +2,10 @@ import java.io.*;
 import java.text.*;
 import java.util.*;
 
-public class Main 
+public class taskcli 
 {
 	public static void main(String[] args) 
 	{
-		/*
-		 * Add, Update, Delete tasks
-		 * Mark a task as in progress or done
-		 * List all tasks, done tasks, not done tasks, in-progress tasks
-		 * Use JSON file to store Tasks
-		 * Use positional command line args to take in user input
-		 * Make sure to handle exceptions and edge cases
-		 */
-		
-		/*
-		 * TODO:
-		 * - Fix duplicate ID thing
-		 * - Extensively test things, handle edge cases
-		 * - Add comments
-		 * - Make everything look professional for GitHub
-		 */
 		int idCount = 0;
 		SimpleDateFormat ft = new SimpleDateFormat("MM-dd-yyyy");
 		ArrayList<Task> allTasks = new ArrayList<Task>();
@@ -40,10 +24,18 @@ public class Main
 				allTasks.add(t);
 				idCount++;
 			}
+			
+			for(Task t : allTasks)
+			{
+				if(t.getId() - idCount > 0)
+				{
+					idCount++;
+				}
+			} 
 
 			switch(args[0])
 			{
-			case "add": //done
+			case "add": 
 				try
 				{
 					idCount++;
@@ -65,7 +57,7 @@ public class Main
 					break;
 				}
 				
-			case "update": //done
+			case "update": 
 				try 
 				{
 					int idToUpdate = Integer.valueOf(args[1]);
@@ -91,7 +83,7 @@ public class Main
 					break;
 				}
 				
-			case "delete": //done
+			case "delete": 
 				try 
 				{
 					int idToDelete = Integer.valueOf(args[1]);
@@ -120,7 +112,7 @@ public class Main
 					break;
 				}
 				
-			case "mark-in-progress": //done
+			case "mark-in-progress": 
 				try 
 				{
 					int idToMark = Integer.valueOf(args[1]);
@@ -145,7 +137,7 @@ public class Main
 					break;
 				}
 				
-			case "mark-done": //done
+			case "mark-done": 
 				try 
 				{
 					int idToMark = Integer.valueOf(args[1]);
@@ -169,7 +161,7 @@ public class Main
 					System.out.println("Please provide a task index to mark");
 					break;
 				}
-			case "list": //done
+			case "list": 
 				try 
 				{
 					switch(args[1])
@@ -207,9 +199,16 @@ public class Main
 				}
 				catch (ArrayIndexOutOfBoundsException e)
 				{
-					for(Task t : allTasks)
+					if(allTasks.size() != 0)
 					{
-						System.out.println(t);
+						for(Task t : allTasks)
+						{
+							System.out.println(t);
+						}
+					}
+					else
+					{
+						System.out.println("There are no tasks to list");
 					}
 				}
 				break;
