@@ -153,7 +153,7 @@ public class Main
 					}
 					out.flush();
 					out.close();
-					System.out.println("Task marked as in-progress");
+					System.out.println("Task marked as done");
 					break;
 				}
 				catch(ArrayIndexOutOfBoundsException e)
