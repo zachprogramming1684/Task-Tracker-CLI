@@ -12,9 +12,19 @@ This is a simple Command Line Interface Application for keeping track of tasks. 
 ## Running the Program
 1. Download `taskcli.jar` to your machine.
 2. In your terminal, navigate to where you downloaded the jar file.
-   ex. `cd <your file path>`
+   `cd <your file path>`
 3. Run the application
    `java -jar taskcli.jar <your command(s)>`
 
 ## Usage
+```
+java -jar taskcli.jar add "go to the store"
+java -jar taskcli.jar add "get a car wash"
+java -jar taskcli.jar add "go to the gym"
+java -jar taskcli.jar mark-done 2
+java -jar taskcli.jar list
+java -jar taskcli.jar list done
+java -jar taskcli.jar update 1 "do laundry"
+java -jar taskcli.jar delete 2
+
 ```
