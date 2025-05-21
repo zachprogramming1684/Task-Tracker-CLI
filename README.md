@@ -10,7 +10,7 @@ This is a simple Command Line Interface application for keeping track of tasks. 
 * list: Lists either all tasks or tasks with a specified status (done, todo, in-progress)
 
 ## Running the Program
-1. Ensure you have Java installed.
+1. Ensure you have the latest JDK installed.
 2. Download `taskcli.jar` to your machine.
 3. In your terminal, navigate to where you downloaded the jar file.  
    `cd <your file path>`
